@@ -16,7 +16,7 @@
         .grid-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
-            grid-template-rows: auto auto auto;    /* Creates 3 rows that size to content */
+            grid-template-rows: 100px 100px 100px;    /* Creates 3 rows that size to content */
             gap: 10px;                            /* Gap between grid items */
             background-color: #f4f4f4;
             padding: 20px;
@@ -28,13 +28,13 @@
             background-color: #ddd;
             padding: 20px;
             border-radius: 5px;
-            text-align: center;
+            text-align: center; 
         }
         
         /* Specific grid items */
         .item1 {
             grid-column: 1 / 3; /* Item spans from column line 1 to 3 */
-            grid-row: 1;
+            grid-row: 1 ;
             background-color: #88c1d0;
         }
         
@@ -46,6 +46,7 @@
         
         .item5 {
             grid-column: 1 / 4; /* Item spans all columns */
+            grid-row: 2;
             background-color: #a8d5ba;
         }
     </style>
