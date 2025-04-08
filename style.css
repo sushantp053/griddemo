@@ -59,6 +59,23 @@ body{
     justify-content: center;
     padding-left: 10vw;
     padding-right: 10vw;
+    position: relative;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    left: 10vw;
+    width: 30%;
+}
+.social i:hover{
+    color: blue;
+    scale: 1.5;
+    transition: 0.3s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in;
 }
 .image{
     background-color: #fff;
@@ -70,8 +87,37 @@ body{
     font-size: 3rem;
     color: #000;
 }
+.profile a{
+    text-decoration: none;
+    width: 150px;
+    margin-top: 50px;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    background-color: blue;
+    border-bottom: 2px solid blue;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.profile a:hover{
+    border-bottom: 2px solid red;
+    transition: 0.5s;
+}
 .image{
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-size: cover;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mask-image: url('Shape.png');
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
 }
