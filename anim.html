@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        .box:hover {
+            animation-play-state: paused;
+        }
+        .box:active {
+            animation-play-state: running;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translatex(900px);
+            }
+           
+            100% {
+                transform: translateX(1800px);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <i class="fa-solid fa-bicycle" style="font-size: 50px; color: red;"></i> Text
+    </div>
+    <marquee>This text will scroll from right to left</marquee>
+</body>
+</html>

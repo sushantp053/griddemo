@@ -61,6 +61,10 @@ body{
     padding-right: 10vw;
     position: relative;
 }
+span{
+    font-size: 3rem;
+    color: #000;
+}
 .social{
     display: flex;
     justify-content: space-between;
@@ -112,7 +116,7 @@ body{
     background-color: #fff;
     background-size: cover;
 }
-.image img{
+/* .image img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -120,4 +124,47 @@ body{
     mask-size: contain;
     mask-position: center;
     mask-repeat: no-repeat;
-}
+} */
+ .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    ;
+ }
+
+ #marlon{
+    font-size: 4rem;
+    font-weight: 600;
+    background-image: url('person.jpeg');
+    color: transparent;
+    background-clip: text;
+    background-size: cover;
+    background-position: center;
+
+ }
+
+ .projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    padding-left: 10vw;
+ }
+ .about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    padding-left: 10vw;
+ }
+ .footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    padding-left: 10vw;
+ }
